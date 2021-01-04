@@ -644,6 +644,9 @@ def main():
             if len(sentences) < 10:
                 MAX_GEN = 20
                 POPU_SIZE = 40
+            elif len(sentences) > 50:
+                MAX_GEN = 100
+                POPU_SIZE = 100
             else:
                 MAX_GEN = len(sentences)*2
                 POPU_SIZE = len(sentences)*2
