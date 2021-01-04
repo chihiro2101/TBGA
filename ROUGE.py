@@ -161,7 +161,7 @@ class Summerizer(object):
         for individual in population:
             fitness_value.append(individual[2])
         if len(fitness_value) == 0:
-            import pdb; pdb.set_trace()
+            # import pdb; pdb.set_trace()
             print("bug")
         fittest_individual = max(fitness_value)
         medium_individual = sta.median(fitness_value)
@@ -642,11 +642,11 @@ def main():
 
 
             if len(sentences) < 10:
-                MAX_GEN = 30
-                POPU_SIZE = 50
+                MAX_GEN = 20
+                POPU_SIZE = 40
             else:
                 MAX_GEN = len(sentences)*2
-                POPU_SIZE = len(sentences)*3
+                POPU_SIZE = len(sentences)*2
 
 
             print("POPULATION SIZE: {}".format(POPU_SIZE))
