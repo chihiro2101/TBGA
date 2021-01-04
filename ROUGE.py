@@ -101,7 +101,7 @@ class Summerizer(object):
 
 
     def generate_population(self, amount):
-        print("Generating population...")
+        # print("Generating population...")
         population = []
         typeA = []
         typeB = []
